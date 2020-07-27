@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>The Gossip Project</title>
+  </head>
+  <body>
+  <h1>ET VOICI LES DERNIERS POTINS DE THP SUMMER '20 !!!</h1>
+    <a href="/gossips/new/">Nouveau gossip</a>
+
+    <% gossips.each_with_index do |gossip,id|%>
+        <p>
+          <%= gossip.author %><br/>
+          <%= gossip.content %><br>
+          <a href = "./gossips/<%=id%>/">Lien vers le potin</a>
+        </p>
+      <%end%>
+  </body>
+</html>
